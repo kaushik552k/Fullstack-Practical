@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+
+    .header {
+        background-color: #2f3640;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .header h1{
+        line-height: 70px;
+        color: white;
+    }
+    .header img{
+        width: 50px;
+        line-height: 70px;
+        margin-right: 20px;
+    
+    }
+    .content{
+        float: right;
+        width: 100%;
+        padding: 20px;
+        position: fixed;
+        height: 100vh;
+        transition: 0.7s;  
+    }
+
+    .content img{
+        max-width: 60%;
+        display: block;
+        margin: 0px auto 20px auto;
+    }
+    #chk{
+        position: fixed;
+        top: 0px;
+        opacity: 0;
+    }
+    .show-btn,.hide-btn{
+        position: fixed;
+        top: 20px;
+        left: 40px;
+        color: white;
+        font-size: 30px;
+    }
+    .hide-btn{
+        opacity: 0;
+    }
+    .sidebar{
+        background-color: #2f3640;
+        width: 20%;
+        height: 100vh;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        transition: 0.7s;
+        
+    }
+    .sidebar ul{
+        list-style-type: none;
+    }
+    .sidebar ul li{
+        padding: 20px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        
+
+    }
+    .sidebar ul li a{
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        
+    }
+    .sidebar ul li:hover{
+        border-left: 5px solid white;
+        transition: 0.2s;
+    }
+    a i{
+        margin-right: 20px;
+    }
+    .social-media{
+        
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 30px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        border-top: 2px solid rgba(255, 255, 255, 0.1);
+        padding: 15px 25px;
+        margin-top: 208px;
+    }
+    #chk:checked ~ .sidebar{
+        left: 0%;
+        transition: 0.4s;
+    }
+    #chk:checked ~ .show-btn{
+        opacity: 0;
+    }
+    #chk:checked ~ .hide-btn{
+        opacity: 1;
+    }
+    #chk:checked ~ .content{
+        transition: 0.7s;
+        width: 80%;
+        left: 20%;
+    }
+    @media screen and (max-width: 760px){
+        .sidebar{
+            width: 100%;
+        }
+        .sidebar li a{
+            text-align: center;
+        }
+        .header h1{
+            display: none;
+        }
+
+    }
+    
+
+    
+</style>
+
+<body>
+
+    <div class="header">
+        <img src="../images/logo.png" alt="">
+        <h1>FULLSTACK</h1>
+        
+    </div>
+    
+    
+    <input type="checkbox" id="chk">
+        <label for="chk" class="show-btn">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <label for="chk" class="hide-btn">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </label>
+
+
+        <div class="content">
+            <img src="../images/banner.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quia nisi corrupti ea aperiam natus
+                doloremque harum ipsum dolor aut, dicta autem. Atque obcaecati laboriosam ea quibusdam commodi odio.
+                Repellat corrupti, nemo quam consequuntur autem voluptas illum vel doloremque atque Lorem, ipsum dolor sit
+                amet consectetur adipisicing elit. Aut soluta corrupti iste, hic iure doloribus, eum animi saepe modi illum
+                sint facilis incidunt officiis. Vel sequi quaerat dolore distinctio excepturi ipsum cupiditate perspiciatis
+                in totam sint optio obcaecati, dignissimos delectus provident hic nobis, aut voluptas, sunt exercitationem
+                harum nam. Itaque!</p>
+        </div>
+
+
+    <div class="sidebar">   
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i><span>Home</span></a></li>
+            <li><a href="#"><i class="fa fa-tasks"></i><span>Service</span></a></li>
+            <li><a href="#"><i class="fa fa-user"></i><spna>About</spna></a></li>
+            <li><a href="#"><i class="fa fa-rss"></i><spna>Blog</spna></a></li>
+            <li><a href="#"><i class="fa fa-id-card"></i><spna>Contact</spna></a></li>    
+        </ul>
+
+        <div class="social-media">
+            <i class="fa fa-facebook Square"></i>
+            <i class="fa fa-youtube Square "></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+    </div>
+   
+
+</body>
+
+</html>
