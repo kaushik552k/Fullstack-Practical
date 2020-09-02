@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: lightgray;
+    }
+    .container{
+        background-color: white;
+        width: 55%;
+        max-width: auto;
+        margin: 20px auto;
+        padding: 0px 8px 8px 8px;
+    }
+
+
+    table {
+        width: 100%;
+        margin: auto;
+        background-color: white;
+        border-collapse: collapse;
+        /* border: 1px solid black; */
+        padding: 0px 5px;
+
+    }
+    tr{
+        border-collapse: collapse;
+    }
+
+    tbody {
+        padding: 10px;
+    }
+
+    thead tr th {
+        padding: 10px;
+    }
+
+    tr td {
+        /* border: 1px solid black; */
+        padding: 8px;
+        text-align: center;
+        font-weight: 500;
+        /* border-left: 2.5px solid white; */
+    }
+
+    tbody tr:nth-child(1) {
+        color: darkorchid;
+        font-weight: bolder;
+        font-size: 25px;
+
+
+
+    }
+
+    tbody tr:nth-child(1) td {
+        padding: 30px;
+    }
+
+    tbody tr:nth-child(2) td {
+        padding: 15px;
+        color: green;
+        font-weight: 550;
+        font-size: 17px;
+    }
+
+    button {
+        background-color: rgb(217, 108, 250);
+        color: white;
+        font-size: 18px;
+        padding: 15px 40px;
+        border-radius: 8px;
+        cursor: pointer;
+
+    }
+
+    button:hover {
+        background-color: rgb(202, 69, 243);
+
+
+    }
+
+    tr:nth-child(odd) td:nth-child(1) {
+        background-color: rgb(202, 251, 202);
+    }
+
+    .fa-check {
+        color: green;
+    }
+
+    .fa-times {
+        color: red;
+    }
+
+    tr:nth-child(odd) td:nth-child(2) {
+        background-color: rgb(184, 246, 184);
+    }
+
+    tr:nth-child(odd) td:nth-child(3) {
+        background-color: rgb(162, 230, 162);
+    }
+
+    tr:nth-child(odd) td:nth-child(4) {
+        background-color: rgb(181, 208, 212);
+    }
+
+    tr:nth-child(even) {
+        background-color: rgb(232, 246, 232);
+    }
+
+    tr td:nth-child(1),
+    tr td:nth-child(2),
+    tr td:nth-child(3) {
+        border-right: 2.5px solid white;
+    } 
+</style>
+
+<body>
+    <div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">SELECT YOUR PLAN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <i class="fa fa-building-o" aria-hidden="true"></i>
+                    Basic
+                </td>
+                <td>
+                    <i class="fa fa-superpowers" aria-hidden="true"></i>
+                    Plus
+                </td>
+                <td>
+                    <i class="fa fa-telegram" aria-hidden="true"></i>
+                    Deluxe
+                </td>
+                <td>
+                    <i class="fa fa-tachometer" aria-hidden="true"></i>
+                    Pro
+                </td>
+
+            </tr>
+            <tr>
+                <td>Rs. 500/-</td>
+                <td>Rs. 1500/-</td>
+                <td>Rs. 2500/-</td>
+                <td>Rs. 3500/-</td>
+            </tr>
+            <tr>
+                <td>50 pages</td>
+                <td>75 pages</td>
+                <td>Unlimited</td>
+                <td>Unlimited</td>
+
+            </tr>
+            <tr>
+                <td>3 users</td>
+                <td>5 users</td>
+                <td>10 users</td>
+                <td>Unlimited</td>
+
+            </tr>
+            <tr>
+                <td>10 sites</td>
+                <td>25 sites</td>
+                <td>100 sites</td>
+                <td>Unlimited</td>
+
+            </tr>
+            <tr>
+                <td>50 MB</td>
+                <td>250 MB</td>
+                <td>1 GB</td>
+                <td>5 GB</td>
+            </tr>
+            <tr>
+                <td>included</td>
+                <td>included</td>
+                <td>included</td>
+                <td>included</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+
+            </tr>
+            <tr>
+                <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+
+            </tr>
+            <tr>
+                <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+
+            </tr>
+            <tr>
+                <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+
+            </tr>
+            <tr>
+                <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+
+            </tr>
+            <tr>
+                <td><button>Sign Up</button></td>
+                <td><button>Sign Up</button></td>
+                <td><button>Sign Up</button></td>
+                <td><button>Sign Up</button></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</div>
+</body>
+
+</html>
