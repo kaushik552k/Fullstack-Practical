@@ -8,24 +8,26 @@
     <title>Document</title>
 </head>
 <style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
     body {
         background-color: lightgray;
     }
     .container{
+        /* position: relative; */
         background-color: white;
-        width: 55%;
-        max-width: auto;
+        width: 50%;
         margin: 20px auto;
         padding: 0px 8px 8px 8px;
     }
 
-
     table {
+        /* position: absolute; */
         width: 100%;
-        margin: auto;
         background-color: white;
         border-collapse: collapse;
-        /* border: 1px solid black; */
         padding: 0px 5px;
 
     }
@@ -122,10 +124,11 @@
 
 <body>
     <div class="container">
+        
     <table>
         <thead>
             <tr>
-                <th colspan="4">SELECT YOUR PLAN</th>
+                <th colspan="4" style="font-size: 20px;">Select Your Plan</th>
             </tr>
         </thead>
         <tbody>
