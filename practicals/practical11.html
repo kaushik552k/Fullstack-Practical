@@ -8,187 +8,204 @@
     <title>Document</title>
 </head>
 <style>
-    table{
-        width: 90%;
-        margin: 10px auto;
-        border: 1px solid #2f3640;
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        border: 3px solid #2f3640;
+        border-radius: 5px;
+    }
+
+
+    table {
+        width: 100%;
         border-collapse: collapse;
         font-size: 17px;
     }
-    td{
-        /* border: 1px solid black; */
-        padding: 1px;
-        /* text-align: center; */
-    }
-    thead tr:nth-child(1){
-        background-color: #2f3640;
-        color: white;
-        padding: 5px;
-        
-    }
     
-    tr td:nth-child(2){
-        width: 40%;
-        text-align: left;
-    }
-    tr td:nth-child(4){
-        color: green;
-    }
-    tr{
-        height: 30px;
-        border: 1px solid grey;
-    }
-    tr td:nth-child(1),tr td:nth-child(5){
-        text-align: center;
-    }
-    tr td:nth-child(5){
-        width: auto;
-    }
-    thead tr:nth-child(2) td{
-        font-weight: bold;
-        color: black;
-        /* font-size: 17px; */
-    }
-    thead tr:nth-child(2) td:nth-child(1) i{
-        color: black;
-        cursor: unset;
-    }
-    tbody tr:hover{
-        background-color: rgb(246, 244, 244,0.5);
-    }
-    tbody tr td:nth-child(3){
-        padding: 18px;
-    }
-    tr td i:nth-child(1):hover{
-        color: rgb(37, 211, 37);
-        cursor: pointer;
-    }
-    tr td i:nth-child(2):hover{
-        color: red;
-        cursor: pointer;
-    }
-    i{
+    
+
+    tr td,
+    tr th {
+        border-bottom: 2px solid rgb(233, 227, 227);
+        height: 38px;
         padding: 5px;
-        color: grey;
-        
+
     }
 
-    
-    
+    thead tr:nth-child(1) {
+        background-color: #32496b;
+        color: white;
+    }
+
+    thead tr:nth-child(1) th {
+        height: auto;
+        padding: 8px;
+    }
+
+    thead tr:nth-child(2) td {
+        border-bottom: 4px solid rgb(233, 227, 227);
+        height: auto;
+        padding: 8px;
+        font-weight: 600;
+    }
+
+    tr td:nth-child(1),
+    tr td:nth-child(5){
+        text-align: center;
+    }
+    tr td:nth-child(2){
+        width: 450px;
+    }
+    tr td:nth-child(3){
+        padding-left: 25px;
+    }
+    thead tr td:nth-child(3){
+        padding-left: 30px;
+    }
+    tbody tr:hover{
+        background-color: rgb(246, 241, 241);
+    }
+    a{
+        color: grey;
+        text-decoration: none;
+    }
+    a:hover{
+        color: blue;
+    }
+    tbody tr td:nth-child(4){
+        color: rgb(23, 187, 23);
+    }
+    tbody tr:nth-child(10) td:nth-child(4){
+        color: red;
+    }
+    .fa-pencil{
+        color: grey;
+        margin-right: 8px;
+    }
+    .fa-trash-o{
+        color: grey;
+    }
+    .fa-pencil:hover{
+        color: blue;
+    }
+    .fa-trash-o:hover{
+        color: red;
+    }
 </style>
 
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th colspan="5">Online Practical Book</th>
-            </tr>
-            <tr>
-                <td><i class="fa fa-hashtag" aria-hidden="true"></i></td>
-                <td>Practical Name</td>
-                <td>Link</td>
-                <td>Status</td>
-                <td>Tools</td>
-            </tr>   
-        </thead>
-        
-        <tbody>   
-            <tr>
-                <td>1</td>
-                <td>Create a webpage including Html basic skeleton using offline HTML Editor and Online Sandbox
-                    Environment.</td>
-                <td><a href="practical1.html">Practical-1</a></td>
-                <td>Checked</td>
-                <td><i class="fa fa-pencil" aria-hidden="true"></i>
-                    <i class="fa fa-trash-o" aria-hidden="true"></i></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Live your First Web-Page on Git-Hub.</td>
-                <td><a href="practical2.html">Practical-2</a></td>
-                <td>Checked</td>
-                <td><i class="fa fa-pencil" aria-hidden="true"></i>
-                    <i class="fa fa-trash-o" aria-hidden="true"></i></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Create a web page showing a basic html structure using character Entities and span Tag.</td>
-                <td><a href="practical3.html">Practical-3</a></td>
-                <td>Checked</td>
-                <td><i class="fa fa-pencil" aria-hidden="true"></i>
-                    <i class="fa fa-trash-o" aria-hidden="true"></i>
-                </td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Create a websitehaving list of all practical and their individual Practical Page links.</td>
-                <td><a href="practical4.html">Practical-4</a></td>
-                <td>Checked</td>
-                <td><i class="fa fa-pencil" aria-hidden="true"></i>
-                    <i class="fa fa-trash-o" aria-hidden="true"></i></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Create a Web-Page showing the use of Image-Map in the Web Application.</td>
-                <td><a href="practical5.html">Practical-5</a></td>
-                <td>Checked</td>
-                <td>
-                    <i class="fa fa-pencil" aria-hidden="true"></i>
-                    <i class="fa fa-trash-o" aria-hidden="true"></i>
-                </td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Create a Card Layout using css layout properties.</td>
-                <td><a href="practical6.html">Practical-6</a></td>
-                <td>Checked</td>
-                <td>
-                    <i class="fa fa-pencil" aria-hidden="true"></i>
-                    <i class="fa fa-trash-o" aria-hidden="true"></i>
-                </td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>Create a Web-Page Layout using div tags.</td>
-                <td><a href="practical7.html">Practical-7</a></td>
-                <td>Checked</td>
-                <td>
-                    <i class="fa fa-pencil" aria-hidden="true"></i>
-                    <i class="fa fa-trash-o" aria-hidden="true"></i>
-                </td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>Create a Web-Page having fixed Navigation Bar with the given content.</td>
-                <td><a href="practical8.html">Practical-8</a></td>
-                <td>Checked</td>
-                <td>
-                    <i class="fa fa-pencil" aria-hidden="true"></i>
-                    <i class="fa fa-trash-o" aria-hidden="true"></i>
-                </td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>Create a Responsive Web Layout with Responsive Navigation Bar.</td>
-                <td><a href="practical9.html">Practical-9</a></td>
-                <td>Checked</td>
-                <td>
-                    <i class="fa fa-pencil" aria-hidden="true"></i>
-                    <i class="fa fa-trash-o" aria-hidden="true"></i>
-                </td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>Create a Responsive Side-Bar Navigation Menu</td>
-                <td><a href="practical10.html">Practical-10</a></td>
-                <td>Checked</td>
-                <td>
-                    <i class="fa fa-pencil" aria-hidden="true"></i>
-                    <i class="fa fa-trash-o" aria-hidden="true"></i>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <table>
+            <thead>
+                <tr><th colspan="5">FullStack Live Practical Book</th>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-hashtag" aria-hidden="true"></i></td>
+                    <td>Practical Name</td>
+                    <td>Link</td>
+                    <td>Status</td>
+                    <td>Tools</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Create a webpage including Html basic skeleton using offline HTML Editor and Online Sandbox
+                        Environment.</td>
+                    <td><a href="practical1.html">Practical-1</a></td>
+                    <td>Checked</td>
+                    <td><i class="fa fa-pencil" aria-hidden="true" title="Edit"></i>
+                        <i class="fa fa-trash-o" aria-hidden="true" title="Delete"></i></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Live your First Web-Page on Git-Hub.</td>
+                    <td><a href="practical2.html">Practical-2</a></td>
+                    <td>Checked</td>
+                   <td><i class="fa fa-pencil" aria-hidden="true" title="Edit"></i>
+                        <i class="fa fa-trash-o" aria-hidden="true" title="Delete"></i></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Create a web page showing a basic html structure using character Entities and span Tag.</td>
+                    <td><a href="practical3.html">Practical-3</a></td>
+                    <td>Checked</td>
+                    <td><i class="fa fa-pencil" aria-hidden="true" title="Edit"></i>
+                        <i class="fa fa-trash-o" aria-hidden="true" title="Delete"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Create a websitehaving list of all practical and their individual Practical Page links.</td>
+                    <td><a href="practical4.html">Practical-4</a></td>
+                    <td>Checked</td>
+                    <td><i class="fa fa-pencil" aria-hidden="true" title="Edit"></i>
+                        <i class="fa fa-trash-o" aria-hidden="true" title="Delete"></i></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Create a Web-Page showing the use of Image-Map in the Web Application.</td>
+                    <td><a href="practical5.html">Practical-5</a></td>
+                    <td>Checked</td>
+                    <td>
+                        <i class="fa fa-pencil" aria-hidden="true" title="Edit"></i>
+                        <i class="fa fa-trash-o" aria-hidden="true" title="Delete"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Create a Card Layout using css layout properties.</td>
+                    <td><a href="practical6.html">Practical-6</a></td>
+                    <td>Checked</td>
+                    <td>
+                        <i class="fa fa-pencil" aria-hidden="true" title="Edit"></i>
+                        <i class="fa fa-trash-o" aria-hidden="true" title="Delete"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Create a Web-Page Layout using div tags.</td>
+                    <td><a href="practical7.html">Practical-7</a></td>
+                    <td>Checked</td>
+                    <td>
+                        <i class="fa fa-pencil" aria-hidden="true" title="Edit"></i>
+                        <i class="fa fa-trash-o" aria-hidden="true" title="Delete"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Create a Web-Page having fixed Navigation Bar with the given content.</td>
+                    <td><a href="practical8.html">Practical-8</a></td>
+                    <td>Checked</td>
+                    <td>
+                        <i class="fa fa-pencil" aria-hidden="true" title="Edit"></i>
+                        <i class="fa fa-trash-o" aria-hidden="true" title="Delete"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Create a Responsive Web Layout with Responsive Navigation Bar.</td>
+                    <td><a href="practical9.html">Practical-9</a></td>
+                    <td>Checked</td>
+                    <td>
+                        <i class="fa fa-pencil" aria-hidden="true" title="Edit"></i>
+                        <i class="fa fa-trash-o" aria-hidden="true" title="Delete"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Create a Responsive Side-Bar Navigation Menu</td>
+                    <td><a href="practical10.html">Practical-10</a></td>
+                    <td>Un-Checked</td>
+                    <td>
+                        <i class="fa fa-pencil" aria-hidden="true" title="Edit"></i>
+                        <i class="fa fa-trash-o" aria-hidden="true" title="Delete"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>
