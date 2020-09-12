@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+    .main-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        font-weight: 600;
+        padding: 20px;
+
+    }
+    .main-content span:nth-child(1){
+        color: blue;
+        margin-right: 20px;
+    }
+    .main-content span:nth-child(2){
+        color: red;
+    }
+
+    footer {
+        background-color: #1d2127;
+        
+    }
+
+    .sec1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+
+    }
+
+    .about {
+        width: 40%;
+        text-align: justify;
+        color: grey;
+        line-height: 20px;
+    }
+
+    h2 {
+        color: white;
+    }
+    ul{
+        margin-left: -30px;
+    }
+
+    ul li {
+        list-style: none;
+        margin-bottom: 10px;
+
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: grey;
+    }
+
+    ul li a:hover {
+        color: gold;
+
+    }
+
+    i,
+    span {
+        color: grey;
+    }
+    .sec1 .Contact ul li span{
+        margin-left: 10px;
+    }
+
+    
+
+    span:hover {
+        color: gold;
+    }
+    .sec2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sec2 h2{
+        color: grey;
+        font-size: 30px;
+        margin-right: 20px;
+        
+
+    }
+    .sec2 a{
+        border-radius: 15px;
+        background-color: red;
+        padding: 10px;
+        font-size: 19px;
+        color: white;
+        text-decoration: none;
+    }
+    .sec2 a:hover{
+        background-color: goldenrod;
+    }
+    
+    .sec3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+    .sec3 i{
+        margin: 20px;
+        border-radius: 20px;
+        color: white;
+        padding: 10px;
+    }
+    .sec3 i:nth-child(1){
+        background-color: rgb(91, 91, 195);
+        
+    }
+    .sec3 i:nth-child(2){
+        background-color: rgb(60, 170, 238);
+    }
+    .sec3 i:nth-child(3){
+        background-color: red;
+    }
+    .sec3 i:nth-child(4){
+        background-color: rgb(87, 87, 251);
+    }
+    .sec4{
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .sec4 .last{
+        
+        margin-top: 20px;
+        border-bottom: 1px solid white;
+        padding-bottom: 8px;
+    }
+    .last a{
+        text-decoration: none;
+        color: grey;
+        
+    }
+    hr{
+        color: grey;
+        opacity: 0.1;
+    }
+    @media (max-width: 767px){
+        .sec1{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            
+        }  
+        .about{
+            width: 100%;
+        }  
+    } 
+    @media (max-width: 499px){
+        .sec1{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="main-content">
+            <span>Responsive</span>
+            <span>Footer</span>
+        </div>
+        <footer>
+            <section class="sec1">
+                <section class="about">
+                    <h2>About</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repellendus, error ratione dicta
+                        repellat, aliquam tempore voluptate aliquid numquam voluptatem dignissimos architecto enim nulla
+                        consequuntur aspernatur ullam obcaecati! Suscipit commodi, reprehenderit autem possimus ea ex,
+                        temporibus dolores culpa deserunt similique placeat perspiciatis officiis voluptatem vel
+                        dignissimos! Sint voluptates culpa veritatis soluta, quidem consectetur. Mollitia quaerat porro
+                        voluptates nostrum assumenda saepe?</p>
+                </section>
+                <section class="Categories">
+                    <h2>Categories</h2>
+                    <ul>
+
+                        <li><a href="">C</a></li>
+                        <li><a href="">UI Design</a></li>
+                        <li><a href="">PHP</a></li>
+                        <li><a href="">Java</a></li>
+                        <li><a href="">Android</a></li>
+                        <li><a href="">Hybrid Apps</a></li>
+                    </ul>
+                </section>
+                <section class="QuicksLinks">
+                    <h2>QuickLinks</h2>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">contribute</a></li>
+                        <li><a href="">JPrivacy Policy</a></li>
+                        <li><a href="">Sitemap</a></li>
+                        <li><a href="">Disclaimer</a></li>
+                    </ul>
+                </section>
+                <section class="Contact">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li><i class="fa fa-home" aria-hidden="true"> <span>SCO-75, Chandigargh, India</span></i></li>
+                        <li><i class="fa fa-envelope-open" aria-hidden="true"><span>betalabsindia@gmail.com</span></i>
+                        </li>
+                        <li><i class="fa fa-phone-square" aria-hidden="true"><span>Mobile: 7060211872</span></i></li>
+                        <li><i class="fa fa-facebook-official" aria-hidden="true"><span>betalabsindia</span></i></li>
+                    </ul>
+                </section>
+            </section>
+            <hr>
+            <section class="sec2">
+                <h2>Register For Free</h2>
+                <a href="#">Signup!</a>
+            </section>
+            <hr>
+            <section class="sec3">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-google" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+
+            </section>
+        
+            <section class="sec4">
+                <div class="last">
+                <a href="#">Copyright &copy 2020 All rights reserved by Beta-Labs.</a>
+                </div>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>

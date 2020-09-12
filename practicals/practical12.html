@@ -51,16 +51,16 @@
         /* border-left: 2.5px solid white; */
     }
 
-    tbody tr:nth-child(1) {
-        color: darkorchid;
-        font-weight: bolder;
+    tbody tr:nth-child(1) th{
+        color: rgb(173, 59, 230);
+        /* font-weight: bolder; */
         font-size: 25px;
 
 
 
     }
 
-    tbody tr:nth-child(1) td {
+    tbody tr:nth-child(1) th {
         padding: 30px;
     }
 
@@ -72,7 +72,7 @@
     }
 
     button {
-        background-color: rgb(217, 108, 250);
+        background-color: rgb(190, 101, 250);
         color: white;
         font-size: 18px;
         padding: 15px 40px;
@@ -82,12 +82,12 @@
     }
 
     button:hover {
-        background-color: rgb(202, 69, 243);
+        background-color: orangered;
 
 
     }
 
-    tr:nth-child(odd) td:nth-child(1) {
+    tr:nth-child(odd) td:nth-child(1),tbody tr:nth-child(odd) th:nth-child(1){
         background-color: rgb(202, 251, 202);
     }
 
@@ -99,16 +99,16 @@
         color: red;
     }
 
-    tr:nth-child(odd) td:nth-child(2) {
+    tbody tr:nth-child(odd) td:nth-child(2),tr:nth-child(odd) th:nth-child(2){
         background-color: rgb(184, 246, 184);
     }
 
-    tr:nth-child(odd) td:nth-child(3) {
-        background-color: rgb(162, 230, 162);
+    tr:nth-child(odd) td:nth-child(3),tr:nth-child(odd) th:nth-child(3) {
+        background-color: rgb(181, 208, 212);
     }
 
-    tr:nth-child(odd) td:nth-child(4) {
-        background-color: rgb(181, 208, 212);
+    tr:nth-child(odd) td:nth-child(4),tr:nth-child(odd) th:nth-child(4){
+        background-color: rgb(162, 230, 162);
     }
 
     tr:nth-child(even) {
@@ -133,22 +133,22 @@
         </thead>
         <tbody>
             <tr>
-                <td>
+                <th>
                     <i class="fa fa-building-o" aria-hidden="true"></i>
                     Basic
-                </td>
-                <td>
+                </th>
+                <th>
                     <i class="fa fa-superpowers" aria-hidden="true"></i>
                     Plus
-                </td>
-                <td>
+                </th>
+                <th>
                     <i class="fa fa-telegram" aria-hidden="true"></i>
                     Deluxe
-                </td>
-                <td>
+                </th>
+                <th>
                     <i class="fa fa-tachometer" aria-hidden="true"></i>
                     Pro
-                </td>
+                </th>
 
             </tr>
             <tr>
